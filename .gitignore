@@ -1,0 +1,57 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Dist directory
+dist/
+build/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# MacOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+
+# TypeScript compiled JavaScript files
+*.js
+*.jsx
+*.js.map
+*.jsx.map
+
+# TypeScript declaration files
+*.d.ts
+*.d.ts.map
+
+# Optional stylelint cache
+.stylelintcache

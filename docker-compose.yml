@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:latest
+    platform: "linux/amd64"
+    restart: always
+    environment:
+      - POSTGRES_DB=${DATABASE_DB}
+      - POSTGRES_USER=${DATABASE_USER}
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+    volumes:
+      - ./data/database:/var/lib/postgresql/data
+    ports:
+      - "${DATABASE_PORT_OUT}:5432"
+
+  redis:
+    image: redis:latest
+    ports:
+      - "${REDIS_PORT_OUT}:6379"
+    networks:
+      - datalouna_backend_network
+
+networks:
+  datalouna_backend_network:
+    driver: bridge
