@@ -1,7 +1,7 @@
 import postgres from "postgres";
 import { config } from "./config";
 
-console.log(`Connecting to database with the following parameters:
+console.log(`👀 Connecting to database with the following parameters:
   Host: ${config.db.host}
   Port: ${config.db.port}
   Database: ${config.db.database}
@@ -18,7 +18,7 @@ const sql = postgres({
 
 sql`SELECT 1`
   .then(() => {
-    console.log("Database connected successfully.");
+    console.log(`🗃️  Database connected successfully`);
   })
   .catch((err) => {
     console.error("Error connecting to the database:", err);

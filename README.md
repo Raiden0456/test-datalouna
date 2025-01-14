@@ -139,9 +139,17 @@ npm run start    # Запуск компилированного кода (dist/
 Вы увидите в консоли:
 
 ```
+👀 Connecting to database with the following parameters:
+  Host: localhost
+  Port: 5445
+  Database: datalouna_db
+  User: postgres
+
 🚀 Server started on http://localhost:3000
-Connected to Redis
-Database connection successful: ...
+
+♨️ Connected to Redis
+
+🗃️ Database connected successfully
 ```
 
 Теперь приложение доступно по адресу [http://localhost:3000](http://localhost:3000).
